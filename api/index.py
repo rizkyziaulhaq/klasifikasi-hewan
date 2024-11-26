@@ -7,14 +7,14 @@ import numpy as np
 app = Flask(__name__)
 
 # Load model
-model = tf.keras.models.load_model('./dataset/gambar-hewan/my_model.keras')
+model = tf.keras.models.load_model('../dataset/gambar-hewan/my_model.keras')
 
 # Class labels
 class_labels = ['ayam', 'kucing', 'rusa', 'unta']  # Ganti dengan label kelas sebenarnya
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('../templates/index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -28,7 +28,7 @@ def predict():
 
     if file:
         # Simpan file sementara untuk prediksi
-        file_path = os.path.join('./uploads', file.filename)
+        file_path = os.path.join('../uploads', file.filename)
         file.save(file_path)
 
         # Prediksi

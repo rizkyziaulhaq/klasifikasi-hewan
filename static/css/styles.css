@@ -1,0 +1,87 @@
+/* Styling untuk body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Heading utama */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* Form container */
+form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input file */
+input[type="file"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px dashed #aaa;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+  border-color: #333;
+}
+
+/* Submit button */
+button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  form {
+      padding: 15px 20px;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}

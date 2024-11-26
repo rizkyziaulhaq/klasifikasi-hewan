@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Classification</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <h1>Klasifikasi Gambar Hewan</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="imageFile" name="file" accept="image/*" />
+      <button type="submit">Predict</button>
+      <div id="previewContainer">
+        <h2>Preview</h2>
+        <img
+          id="imagePreview"
+          src=""
+          alt="No image uploaded"
+          style="max-width: 300px; display: none"
+        />
+      </div>
+      <div id="resultContainer" style="display: none">
+        <h2>Prediction Result</h2>
+        <p><strong>Prediction:</strong> <span id="prediction"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+      </div>
+    </form>
+    <footer>&copy; 2024 Kelompok 7 - Kecerdasan Buatan</footer>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

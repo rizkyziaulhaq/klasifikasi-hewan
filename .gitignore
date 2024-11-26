@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 # Ignore uploaded files
 uploads/
+.vercel
